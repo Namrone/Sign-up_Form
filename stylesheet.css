@@ -1,0 +1,47 @@
+@font-face{
+    font-family: 'Norse';
+    src: url('norse font/Norse.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#left-body{
+    width: 40%;
+    height: 100%;
+    background-image: url('tree.jpg');
+    background-position: 50% 80%;
+    padding-top: 30%;
+}
+
+#logo-container{
+    max-width: 100%;
+    max-height: 350px;
+    min-height: 250px;
+    background-color: rgba(0,0,0, 0.4);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo{
+    height: 100%;
+    width: 30%;
+    object-fit: contain;
+}
+
+#name{
+    font-size: 15vw;
+    color: #f0f0f0;
+    font-family: 'Norse', sans-serif;
+}
