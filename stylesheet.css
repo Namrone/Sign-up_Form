@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @font-face{
     font-family: 'Norse';
     src: url('norse font/Norse.otf') format('opentype');
@@ -65,6 +67,7 @@ body{
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 #form-title{
@@ -111,8 +114,10 @@ input{
     height: 50px;
     background-color: #304529;
     border-radius: 5px;
+    border: 0;
     color: #f0f0f0;
     font-size: 1.5rem;
+    box-shadow:  5px 5px 10px #666666,-5px -5px 10px #ffffff;
 }
 
 #log-in-container{
@@ -123,5 +128,18 @@ input{
 #log-in{
     font-weight: 600;
     color: #304529;
-    text-decoration: none;;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+input:user-invalid{
+    border-color: red;
+}
+
+input:user-valid{
+    border-color: green;
+}
+
+p, label{
+    font-family: "Encode Sans Semi Expanded", sans-serif;
 }
